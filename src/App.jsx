@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div className="flex justify-center item-center px=[40] h-[600px]">
       <div className="App container  justify-center">
-      <h1 className=' tetx-4xl font-bold py-3'>GitHub Candidate Search</h1>
+      <h1 className=' tetx-4xl font-bold py-4'>GitHub Candidate Search</h1>
       <input
         className=' border border-amber-200 mx-[30px] p-4 rounded-2xl'
         type="text"
