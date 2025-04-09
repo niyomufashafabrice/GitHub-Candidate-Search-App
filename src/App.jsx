@@ -1,8 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { CiSearch } from "react-icons/ci";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import img from '../public/images/pngaaa.com-5008356.png'
+import { CiLinkedin } from "react-icons/ci";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const App = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+    AOS.refresh();
+  }, []);
 
   const [username, setUsername] = useState('');
   const [userData, setUserData] = useState(null);
@@ -53,6 +63,24 @@ const App = () => {
           
         </div>
       )}
+      <div className='md:h-[530px] flex flex-row items-center'>
+        <img src={img} alt="" data-aos="zoom-in" />
+  
+      </div>
+      <div className="border-t border-gray-300 mt-4 w-[100%] py-5 flex
+       flex-row justify-between px-5 text-amber-200 italic font-light"> 
+       <div>
+        {/* social medias */}
+        <div className='flex flex-row items-center gap-1'><MdOutlineEmail />:<p>fabrice1niyo@gmail.com</p></div>
+        <div className='flex flex-row items-center gap-1'><CiLinkedin />:<a href='https://www.linkedin.com/in/fabrice-niyomufasha-6aa8a4234' target='_blank'
+        
+        >Linkedin</a></div>
+        <div className='flex flex-row items-center gap-1'><FaGithub />:<a href='https://github.com/niyomufashafabrice' target='_blank'>Github</a></div>
+       </div>
+       <div>
+       &copy; NFabrice- 2025
+       </div>
+       </div>
     </div>
     </div>
   )
