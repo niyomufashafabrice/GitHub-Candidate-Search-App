@@ -22,8 +22,9 @@ const App = () => {
   };
 
   return (
-    <div className="flex justify-center item-center py-[50px] px-[40] h-[100vh] bg-[#070942]">
+    <div className="flex justify-center item-center py-[50px] px-[40] h-[80vh] bg-[#070942]">
       <div className="App container   items-center flex flex-col gap-5">
+
       <h1 className=' text-6xl font-bold py-4 text-white'>GitHub Candidate Search</h1>
       <div className='bg-white flex justify-end items-center w-[28%] rounded-2xl'>
       <input
@@ -49,6 +50,7 @@ const App = () => {
           <p className='text-lg font-semibold'>Public Repos: {userData.public_repos}</p>
           <p className='text-lg font-semibold'>Followers: {userData.followers}</p>
           <a href={userData.html_url} target="_blank" rel="noreferrer" className='text-lg text-amber-200 flex  flex-row items-center italic gap-2'>View GitHub Profile <FaExternalLinkAlt /></a>
+          
         </div>
       )}
     </div>
