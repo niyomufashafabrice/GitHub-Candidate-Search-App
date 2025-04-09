@@ -22,7 +22,7 @@ const App = () => {
   };
 
   return (
-    <div className="flex justify-center item-center py-[50px] px-[40] h-[80vh] bg-[#070942]">
+    <div className="flex justify-center item-center py-[50px] px-[40] h-[] bg-[#070942]">
       <div className="App container   items-center flex flex-col gap-5">
 
       <h1 className=' text-6xl font-bold py-4 text-white'>GitHub Candidate Search</h1>
