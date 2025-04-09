@@ -32,13 +32,13 @@ const App = () => {
   };
 
   return (
-    <div className="flex justify-center item-center py-[50px] px-[40] h-[] bg-[#070942]">
+    <div className="flex justify-center item-center py-[50px] md:px-[40] h-[] bg-[#070942] ">
       <div className="App container   items-center flex flex-col gap-5">
 
-      <h1 className=' text-6xl font-bold py-4 text-white'>GitHub Candidate Search</h1>
-      <div className='bg-white flex justify-end items-center w-[28%] rounded-2xl'>
+      <h1 className=' text-2xl md:text-6xl font-bold py-2 md:py-4 text-white'>GitHub Candidate Search</h1>
+      <div className='bg-white flex justify-end items-center w-[90%] md:w-[28%] rounded-2xl'>
       <input
-        className='  mx-[30px] p-4 rounded-2xl focus:outline-none focus:border-none'
+        className='  mx-[30px] md:p-4 rounded-2xl focus:outline-none focus:border-none'
         type="text"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
@@ -51,7 +51,7 @@ const App = () => {
       {error && <p style={{ color: 'red' }}>{error}</p>}
 
       {userData && (
-        <div className="profile mt-[40px] bg-white shadow-lg p-6 bg-gradient-to-b from-[#bebad4] to-[#41358aec] w-[60%]">
+        <div className="profile mt-[40px] bg-white shadow-lg p-6 bg-gradient-to-b from-[#bebad4] to-[#41358aec] md:w-[60%] w-[90%]" data-aos="zoom-in">
           <img src={userData.avatar_url} alt="Avatar" width="100" className='rounded-full my-2' />
           <h2 className='text-2xl font-bold'>{userData.name || 'No Name Provided'}</h2>
           <p className='text-lg  font-semibold italic'>{userData.bio || 'No bio'}</p>
@@ -63,7 +63,7 @@ const App = () => {
           
         </div>
       )}
-      <div className='md:h-[530px] flex flex-row items-center'>
+      <div className='md:h-[530px] flex flex-row items-center px-[20px] md:px-[1px]'>
         <img src={img} alt="" data-aos="zoom-in" />
   
       </div>
